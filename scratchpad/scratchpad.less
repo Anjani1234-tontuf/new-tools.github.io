@@ -1,0 +1,38 @@
+#options{
+	& #light{
+		background-color: #CCC;
+		color: black;
+		&:hover{background-color: #EEE;}
+	}
+	& #dark{
+		background-color: #000;
+		&:hover{background-color: #444;}
+	}
+	& #code{
+		background-color: #3C50BF;
+		&:hover{background-color: #4C60CF;}
+	}
+}
+
+#editor{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 8px;
+	
+	font-size: 16px;
+	white-space: pre-wrap;
+	
+	font-family: 'Open Sans';
+	&.code{font-family: 'Source Code Pro';}
+	#options.visible ~ &{top: 50px;}
+	&.dark{
+		background-color: black;
+		color: rgb(150, 150, 150);
+	}
+}
+@media print{
+	#editor{top: 0 !important;}
+}

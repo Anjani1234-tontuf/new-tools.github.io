@@ -1,0 +1,47 @@
+#options{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	display: none;
+	
+	background-color: #002683;
+	font-family: 'Open Sans';
+	color: white;
+	
+	z-index: 100;
+	&.visible{display: block;}
+	& > *{
+		display: inline-block;
+		float: left;
+		margin-right: 30px;
+	}
+	& button{
+		display: inline-block;
+		padding-left: 8px;
+		padding-right: 8px;
+		height: 100%;
+		font-size: 16px;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		transition: background-color 0.5s;
+		cursor: pointer;
+		&.smalltext{font-size: 24px;}
+		&:hover{background-color: #6FCF70;}
+	}
+}
+#options-hint{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	
+	font-family: 'Open Sans';
+	font-size: 300%;
+	color: #AAA;
+}
+@media print{
+	#options{display: none !important;}
+	#options-hint{display: none;}
+}

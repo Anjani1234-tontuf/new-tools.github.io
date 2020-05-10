@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <template>main</template>
+		<title>Scratchpad</title>
+	    <link rel='stylesheet' type='text/css' href='scratchpad.css'/>
+        <script type='text/javascript' src='scratchpad.js'></script>
+    </head>
+    <body>
+		<include href='options'/>
+		<div id='options'>
+            <span class='button-group'>
+				<button id='light' class='smalltext'>Light</button>
+				<button id='dark' class='smalltext'>Dark</button>
+			</span>
+            <span class='button-group'>
+				<button id='text' class='smalltext'>Text</button>
+				<button id='code' class='smalltext'>Code</button>
+			</span>
+            <button id='strip'>Strip HTML</button>
+            <span class='button-group'>
+				<button id='html-to-text' class='smalltext'>Encode</button>
+				<button id='text-to-html' class='smalltext'>Decode</button>
+			</span>
+            <span class='button-group'>
+				<button id='fill-height'>Fill Size</button>
+				<button id='reset-size'>Reset Size</button>
+			</span>
+        </div>
+        <div id='editor' contenteditable='true'></div>
+    </body>
+</html>
