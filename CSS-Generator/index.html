@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+</div>
+
+<script>
+    class Generator {
+        constructor(elem) {
+            this.elem = elem; //elem - reference on <div id="container"></div>
+            this.boxShadow = {
+                x: 0,
+                y: 0,
+                z: 0,
+                op: 0,
+                // color: `#000000`
+                color: {
+                    r: 0,
+                    g: 0,
+                    b: 0,
+                }
+            };
+            console.log(elem);
+        }
+
+        run() {
+            const form = document.createElement('form');
+
+            /*WIDTH*/
+            const widthInput = document.createElement('input');
+            widthInput.setAttribute('type', 'range');
+            widthInput.setAttribute('min', '100');
+            widthInput.setAttribute('max', '500');
+            widthInput.oninput = this.changeWidth.bind(this);
+
+            /*HEIGHT*/
+            const heightInput = document.createElement('input');
+            heightInput.setAttribute('type', 'range');
+            heightInput.setAttribute('min', '100');
+            heightInput.setAttribute('max', '500');
+            heightInput.oninput = this.changeHeight;
+
+            /*COLOR*/
+            const colorInput = document.createElement('input');
+            colorInput.setAttribute('type', 'color');
+            colorInput.setAttribute('min', '100');
+            colorInput.setAttribute('max', '500');
+            colorInput.oninput = this.changeColor.bind(this);
+
+            /*SHADOW -X-*/
+            const shadowX = document.createElement('input');
+            shadowX.setAttribute('type', 'range');
+            shadowX.setAttribute('min', '0');
+            shadowX.setAttribute('max', '255');
+            shadowX.oninput = this.changeBoxShadowX.bind(this);
+
+            /*SHADOW -Y-*/
+            const shadowY = document.createElement('input');
+            shadowY.setAttribute('type', 'range');
+            shadowY.setAttribute('min', '0');
+            shadowY.setAttribute('max', '255');
+            shadowY.oninput = this.changeBoxShadowY.bind(this);
+
+            /*SHADOW -Z-*/
+            const shadowZ = document.createElement('input');
+            shadowZ.setAttribute('type', 'range');
+            shadowZ.setAttribute('min', '0');
+            shadowZ.setAttribute('max', '255');
+            shadowZ.oninput = this.changeBoxShadowZ.bind(this);
+
+            /*SHADOW -OPACITY-*/
+            const shadowOpc = document.createElement('input');
+            shadowOpc.setAttribute('type', 'range');
+            shadowOpc.setAttribute('min', '0');
+            shadowOpc.setAttribute('max', '255');
+            shadowOpc.oninput = this.changeBoxShadowOps.bind(this);
+
+            /*SHADOW -COLOR-*/
+            const shadowColor = document.createElement('input');
+            shadowColor.setAttribute('type', 'color');
+            shadowColor.setAttribute('min', '0');
+            shadowColor.setAttribute('max', '255');
+            shadowColor.oninput = this.changeBoxShadowColor.bind(this);
+
+            /*INPUT -VALUES-*/
+            form.appendChild(widthInput);
+            form.appendChild(heightInput);
+            form.appendChild(colorInput);
+            form.appendChild(shadowX);
+            form.appendChild(shadowY);
+            form.appendChild(shadowZ);
+            form.appendChild(shadowOpc);
+            form.appendChild(shadowColor);
+
+            /*BLOCK with STYLE*/
+            this.block = document.createElement('div');
+            this.block.style = 'width: 100px; height: 100px; border: 1px solid;';
+            this.elem.appendChild(form);
+            this.elem.appendChild(this.block);
+        }
+
+        changeWidth(e) {
+            this.block.style.width = e.target.value + 'px';
+            console.log(e.target.value);
+        }
+
+        changeHeight(e) {
+            this.parentElement.nextElementSibling.style.height = this.value + 'px';
+            console.log(e.target.value);
+        }
+
+        changeColor(e) {
+            this.block.style.backgroundColor = e.target.value;
+            console.log(e.target.value);
+
+        }
+
+        changeBoxShadowX(e) {
+            this.boxShadow.x = e.target.value;
+            this.changeBoxAll(this.block); //method of changeBoxAll()
+            console.log(e);
+        }
+
+        changeBoxShadowY(e) {
+            this.boxShadow.y = e.target.value;
+            this.changeBoxAll(this.block);
+            console.log(e.target.value);
+        }
+
+        changeBoxShadowZ(e) {
+            this.boxShadow.z = e.target.value;
+            this.changeBoxAll(this.block);
+            console.log(e.target.value);
+        }
+
+        changeBoxShadowOps(e) {
+            this.boxShadow.op = e.target.value;
+            this.changeBoxAll(this.block);
+            console.log(e.target.value);
+        }
+
+        changeBoxShadowColor(e) {
+            this.boxShadow.color = e.target.value;
+            this.changeBoxAll(this.block);
+            console.log(e.target.value);
+        }
+
+        changeBoxAll(e) {
+            e.style.boxShadow = this.boxShadow.x + 'px ' + this.boxShadow.y + 'px ' + this.boxShadow.z + 'px ' + this.boxShadow.op + 'px ' + this.boxShadow.color;
+        }
+    }
+
+    const newGen = new Generator(container);
+    newGen.run();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.text-bold
+{
+    font-weight: bold;
+}
+
+.text-unbold
+{
+    font-weight: normal;
+}
+
+.text-italic
+{
+    font-style: italic;
+}
+
+.text-unitalic
+{
+    font-style: normal;
+}

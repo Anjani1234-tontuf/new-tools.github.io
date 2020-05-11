@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81213477-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81213477-8');
+</script>
+
+  <meta charset="utf-8">
+
+  <title>Quark | HTML/CSS/JS Editor</title>
+  <meta name="description" content="The Quark Editor: HTML CSS JS">
+  <meta name="author" content="Sheshank Shankar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/jpeg" href="quarklogo.jpg" />
+</head>
+
+<body>
+  <div id="google" class="modal1overlay">
+    <div class="modal1">
+      <a href="javascript:modal1close()" class="close">&times;</a>
+      <div>
+        <h1>Settings:</h1>
+        <hr style="border:none; border-bottom: 2px solid #ccc; " />
+        <table>
+          <tr>
+            <td>
+              <p>
+                <div style="display:inline;">Programming Language:</div>
+                 &nbsp; &nbsp;
+                <div class="dropdown" style="display:inline;">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">HTML
+                    <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:html()">HTML</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:java()">Java</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:python()">Python</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:json()">JSON</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:txt()">Text</a></li>
+                  </ul>
+                </div>
+                <br />
+                <br />
+                <div style="display:inline;">Theme:</div>
+                 &nbsp; &nbsp;
+                <div class="dropdown" style="display:inline;">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="menu2" data-toggle="dropdown">Quark Tommorow Dark
+                    <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:dark()">Quark Dark</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:idle()">Quark Gray</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:blue()">Quark Blue</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:light()">Quark Light</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:tommorowlight()">Quark Tomorrow Light</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:tommorowdark()">Quark Tomorrow Dark</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:tommorowblue()">Quark Tomorrow Blue</a></li>
+                  </ul>
+                </div>
+                <br />
+                <br />
+                <div style="display:inline;">File Name (without extension):</div>
+                 &nbsp; &nbsp;
+                <form style="display:inline-block;">
+                  <div class="group">
+                    <input id="input-fileName" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label style="font-weight: 300;">File Name</label>
+                  </div>
+                </form>
+                <br />
+                <div style="display:inline;">Zoom:</div>
+                 &nbsp; &nbsp;
+                  <div style="display:inline" class="zoomout" onclick="zoomin()">
+                   <i class="fa fa-plus" aria-hidden="true"></i>
+                  </div>
+                 <input id="zoom" style="display:inline; width: 60px; text-align:center;" type="text" />
+                 <div style="display:inline" class="zoomin" onclick="zoomout()">
+                   <i class="fa fa-minus" aria-hidden="true"></i>
+                 </div>
+              </p>
+            </td>
+            <td>
+              <p>
+                <div>
+                  Alignment: <div id="horizontal" class="buttonpush" onclick="horizontal()" style="display: inline; margin-right: 0px; border-radius: 5px;">Horizontal</div> <div id="vertical" class="buttonpush" onclick="vertical()" style="display: inline; border-radius: 5px; margin-left: 0px;">Vertical</div>
+                  <br />
+                  <Br />
+                  Toggle Preview:
+                  <div id="enable" style="display:inline;" title="reccommended for HTML only" class="toggle" onclick="togglepreview()" data-toggle="tooltip" data-placement="top">
+                    Disable
+                  </div>
+                </div>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <Br />
+        <div style="text-align: right; color: #aaaaaa;">
+          Quark Editor is made by <a href="https://sheshank.com">Sheshank Shankar</a> &copy; 2018
+          <br />
+          Our <i class="fa fa-code" aria-hidden="true"></i> is open-source. View it <a href="https://github.com/GreenBayRules/quark-editor">here</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav id="parent">
+    <div id="child">
+      <div style="float: left; padding: 15px;padding-bottom: 3px;padding-top:13px;">
+        Quark Editor
+      </div>
+      <div style="float: right;">
+
+        <div class="dropdown1 hi">
+        </div>
+        <div class="dropdown1">
+          <button class="dropbtn" id="drop">HTML
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown1-content" style="z-index:999999" id="mydropdown1">
+            <a href="javascript:html()">HTML</a>
+            <a href="javascript:java()">Java</a>
+            <a href="javascript:python()">Python</a>
+            <a href="javascript:json()">JSON</a>
+            <a href="javascript:txt()">Text</a>
+          </div>
+        </div>
+        <div class="dropdown1 hi">
+          <div class="dropbtn" id="btn-save" href="javascript:save()">
+            Save
+          </div>
+        </div>
+        <div class="dropdown1 hi">
+          <div class="dropbtn" onclick="beautify()" data-toggle="tooltip" data-placement="top" title="Disfunctional right now">
+            Beautify
+          </div>
+        </div>
+        <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+        <div class="dropdown1 hi" style="margin-right: 10px;" onclick="modal1open()">
+          <div class="dropbtn" href="javascript:modalcontrol()">
+            <i style="font-size: 20px;" class="fa fa-cog"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+      <div id="editor"></div>
+        <iframe id="output" seamless="1" frameborder="0">
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8" />
+          </head>
+          <body>
+            </body>
+          </html>
+        </iframe>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBEvkNVTDmj1gKc_TW0LrY23ndlXv0q434",
+    authDomain: "quark-editor.firebaseapp.com",
+    databaseURL: "https://quark-editor.firebaseio.com",
+    projectId: "quark-editor",
+    storageBucket: "",
+    messagingSenderId: "806586389975"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="ace-builds-master/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+  <script src="database.js"></script>
+<script src="ace-builds-master/src/ext-language_tools.js"></script>
+</body>
+
+</html>

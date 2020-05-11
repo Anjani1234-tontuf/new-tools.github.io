@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Character Codes</title>
+		<meta name="description" content="HTML character codes intuitively ordered with optional auto copy to clipboard functionality and a beautiful blonde as background." />
+		<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700|Bangers' rel='stylesheet' type='text/css'> -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-amber.min.css" />
+
+		
+		<link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="../favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="../favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="../favicons/manifest.json">
+		<link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="../favicons/favicon.ico">
+		<meta name="msapplication-config" content="../favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+        
+        <style>
+			body,input,textarea{
+			    font-family: "Times New Roman", Times, serif;
+			    font-weight:400;
+			    font-size:1em;
+			    color:#212121;
+			    background:#f5f5f5;
+			}
+			body{
+				background: url(../media/girl.png) no-repeat center center fixed; 
+
+			}
+			.main-container{
+			    margin: 0 auto;
+			}
+			#header-text{
+				font-weight:100;
+				text-align:center;
+				font-size:3em;
+				padding:32px;
+				line-height:120%;
+			}
+			.roboto{
+				font-family: 'Roboto', sans-serif;
+			}
+			#logo{
+				text-align:center;
+			    z-index:99;
+			}
+			#logo:hover{
+			    cursor:pointer;
+			}
+			.item-up{
+			    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+			   	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);				
+			}
+			.item-dowm{
+				-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+				box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+			}
+			.item{
+				position:relative;
+				text-align:center;
+				padding:2px;
+				background:#fafafa;
+				height:6em;
+				width:6em;
+				border-radius:3px;
+				font-weight:100;
+			    background: rgb(245, 245, 245) transparent;
+			    /* RGBa with 0.6 opacity */
+			    background: rgba(245, 245, 245, 0.8);
+			}
+			.item:hover{
+			    cursor:pointer;
+			}
+			.character{
+				font-size:3em;
+			    position:relative;
+				top:33%;	
+			}
+			.code{
+				display:none;
+			}
+			.xs{
+				font-size: .8em;
+			}
+			.selected{
+				background: rgb(11, 128, 67) transparent;
+			    /* RGBa with 0.6 opacity */
+			    background: rgba(11, 128, 67, 0.6);
+				color:#eeeeee;
+			}
+			.header-on-display{
+				color:red;
+			}
+			#alert{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				height:6em;
+				width:6em;
+				z-index:99;
+				-webkit-animation: fade 3s;
+				animation: fade 3s;
+			}
+			#checkbox{
+				font-size:16px;
+				text-align:center;
+				margin-top: -24px;
+				margin-bottom: 24px;
+			}
+			@-webkit-keyframes fade {
+			    0%   {opacity: 0;}
+			    5%  {opacity: 1;}
+			    75%  {opacity: 1;}
+			    100% {opacity: 0;}
+			}  
+			@keyframes fade {
+			    0%   {opacity: 0;}
+			    5%  {opacity: 1;}
+			    75%  {opacity: 1;}
+			    100% {opacity: 0;}
+			}
+        </style>
+	</head>
+	<body>
+        <section id="header-text">
+			<span>Click for HTML Character Code</span>
+        </section>
+        <div id="checkbox"><input type="checkbox" id="box" checked> Auto Copy to Clipboard</div>
+		<main class="main-container mdl-grid">
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character xs">tab</span>
+				<span class="code">&#38;&#35;9&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character xs">new line</span>
+				<span class="code">&#38;&#35;10&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character xs">non-breaking space</span>
+				<span class="code">&#38;&#35;nbsp&#59;</span>
+			</div>			
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#64;</span>
+				<span class="code">&#38;&#35;64&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#38;</span>
+				<span class="code">&#38;&#35;38&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#35;</span>
+				<span class="code">&#38;&#35;35&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#39;</span>
+				<span class="code">&#38;&#35;39&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#34;</span>
+				<span class="code">&#38;&#35;34&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#95;</span>
+				<span class="code">&#38;&#35;95&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#45;</span>
+				<span class="code">&#38;&#35;45&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#176;</span>
+				<span class="code">&#38;&#35;176&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#43;</span>
+				<span class="code">&#38;&#35;43&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8722;</span>
+				<span class="code">&#38;&#35;8722&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#215;</span>
+				<span class="code">&#38;&#35;215&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#247;</span>
+				<span class="code">&#38;&#35;247&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#177;</span>
+				<span class="code">&#38;&#35;177&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#61;</span>
+				<span class="code">&#38;&#35;61&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8800;</span>
+				<span class="code">&#38;&#35;8800&#59;</span>
+			</div>
+			
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8776;</span>
+				<span class="code">&#38;&#35;8776&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#126;</span>
+				<span class="code">&#38;&#35;126&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#161;</span>
+				<span class="code">&#38;&#35;161&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#33;</span>
+				<span class="code">&#38;&#35;33&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#191;</span>
+				<span class="code">&#38;&#35;191&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#63;</span>
+				<span class="code">&#38;&#35;63&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#46;</span>
+				<span class="code">&#38;&#35;46&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#44;</span>
+				<span class="code">&#38;&#35;44&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#58;</span>
+				<span class="code">&#38;&#35;58&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#183;</span>
+				<span class="code">&#38;&#35;183&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#59;</span>
+				<span class="code">&#38;&#35;59&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#40;</span>
+				<span class="code">&#38;&#35;40&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#41;</span>
+				<span class="code">&#38;&#35;41&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#91;</span>
+				<span class="code">&#38;&#35;91&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#93;</span>
+				<span class="code">&#38;&#35;93&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#123;</span>
+				<span class="code">&#38;&#35;123&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#125;</span>
+				<span class="code">&#38;&#35;125&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#92;</span>
+				<span class="code">&#38;&#35;92&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#47;</span>
+				<span class="code">&#38;&#35;47&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#124;</span>
+				<span class="code">&#38;&#35;124&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#166;</span>
+				<span class="code">&#38;&#35;166&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#180;</span>
+				<span class="code">&#38;&#35;180&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#96;</span>
+				<span class="code">&#38;&#35;96&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#36;</span>
+				<span class="code">&#38;&#35;36&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#162;</span>
+				<span class="code">&#38;&#35;162&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8364;</span>
+				<span class="code">&#38;&#35;8364&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#163;</span>
+				<span class="code">&#38;&#35;163&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#165;</span>
+				<span class="code">&#38;&#35;165&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#60;</span>
+				<span class="code">&#38;&#35;60&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#62;</span>
+				<span class="code">&#38;&#35;62&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#171;</span>
+				<span class="code">&#38;&#35;171&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#187;</span>
+				<span class="code">&#38;&#35;187&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#169;</span>
+				<span class="code">&#38;&#35;169&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#174;</span>
+				<span class="code">&#38;&#35;174&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8457;</span>
+				<span class="code">&#38;&#35;8457&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8451;</span>
+				<span class="code">&#38;&#35;8451&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8482;</span>
+				<span class="code">&#38;&#35;8482&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#175;</span>
+				<span class="code">&#38;&#35;175&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#94;</span>
+				<span class="code">&#38;&#35;94&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#42;</span>
+				<span class="code">&#38;&#35;42&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#186;</span>
+				<span class="code">&#38;&#35;186&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#185;</span>
+				<span class="code">&#38;&#35;185&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#178;</span>
+				<span class="code">&#38;&#35;178&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#179;</span>
+				<span class="code">&#38;&#35;179&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#37;</span>
+				<span class="code">&#38;&#35;37&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#188;</span>
+				<span class="code">&#38;&#35;188&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#189;</span>
+				<span class="code">&#38;&#35;189&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#190;</span>
+				<span class="code">&#38;&#35;190&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8531;</span>
+				<span class="code">&#38;&#35;8531&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8532;</span>
+				<span class="code">&#38;&#35;8532&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8539;</span>
+				<span class="code">&#38;&#35;8539&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8540;</span>
+				<span class="code">&#38;&#35;8540&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8541;</span>
+				<span class="code">&#38;&#35;8541&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8226;</span>
+				<span class="code">&#38;&#35;8226&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8227;</span>
+				<span class="code">&#38;&#35;8227&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8228;</span>
+				<span class="code">&#38;&#35;8228&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8229;</span>
+				<span class="code">&#38;&#35;8229&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8230;</span>
+				<span class="code">&#38;&#35;8230&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#167;</span>
+				<span class="code">&#38;&#35;167&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#182;</span>
+				<span class="code">&#38;&#35;182&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8224;</span>
+				<span class="code">&#38;&#35;8224&#59;</span>
+			</div>
+			<div class="item mdl-cell mdl-cell--1-col">
+				<span class="character">&#8225;</span>
+				<span class="code">&#38;&#35;8225&#59;</span>
+			</div>
+		</main>
+		<div id="logo" class="roboto mdl-color-text--grey-600">&#45; Ron Royston</div>
+		
+		<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+		<script>
+			var doc = document;
+			var items = doc.querySelectorAll(".item");
+			var body = document.body;
+			var header = doc.getElementById("header-text");
+			var logo = doc.getElementById("logo");
+			var initialMessage = "Click for HTML Character Code";
+			var cbx = doc.getElementById('box');
+			var clipboard = new Clipboard(items);
+				
+			//LOCAL STORAGE TEST
+			Object.defineProperty(this, "ls", {
+				get: function () { 
+					var test = 'test';
+					try {
+						localStorage.setItem(test, test);
+						localStorage.removeItem(test);
+						return true;
+					} catch(e) {
+						return false;
+					}
+				}
+			});
+			
+		    clipboard.on('success', function(e) {
+				var existingHTML = e.trigger.innerHTML;
+				var alertHTML = existingHTML + '<span id="alert" class="fadeOut">Copied!</span>';
+				e.trigger.innerHTML = alertHTML;
+				setTimeout(undoAlert,2500);
+			});
+				    	
+			doc.addEventListener("DOMContentLoaded", function(e) {
+				attachListenersToItems();
+				attachListenersToLogo();
+				attachListenerToBody();
+				
+				//detect previous preference
+				if(ls){
+					if(localStorage.getItem('disabled')){
+						cbx.checked = false;
+					} else {
+						cbx.checked = true;
+						upgradeItems(); // -------------------------------------------------------------------<<<<<
+					}
+				} else {
+					cbx.checked = true;
+					upgradeItems(); // -------------------------------------------------------------------<<<<<
+				}
+			});		    
+		    
+			cbx.addEventListener("click", function(){
+				if(ls){
+					if(cbx.checked){
+						localStorage.removeItem('disabled');
+						upgradeItems();
+					} else {
+						localStorage.setItem('disabled', true);
+						downgradeItems();
+					}
+				}
+			});		    
+		    function undoAlert(){
+			    var alertElement = document.getElementById('alert');
+				alertElement.parentNode.removeChild(alertElement);
+		    }
+			
+			function upgradeItems(){
+				for (var i = 0; i < items.length; i++) {
+					var codeSpan = items[i].getElementsByClassName('code');
+					var char = codeSpan[0].innerHTML;
+					var str = char;
+					var res = str.replace("amp;", "");
+					items[i].setAttribute('data-clipboard-text',res);
+				}
+			}
+			
+			function downgradeItems(){
+				for (var i = 0; i < items.length; i++) {
+					items[i].removeAttribute('data-clipboard-text');
+					//items[i].classList.remove('copy');
+				}
+			}		    
+			clipboard.on('error', function(e) {
+				console.log(e.trigger,e.action);
+			});
+			
+			function attachListenersToItems(){
+				for (var i = 0; i < items.length; i++) {
+					
+					items[i].addEventListener("click", function(e){
+						clearAll();
+						var node = e.currentTarget;
+						var children = node.children;
+						
+						console.log(node.className);
+						
+						header.innerHTML = String(children[1].innerHTML);
+						node.classList.add('selected');
+						header.classList.add('.header-on-display');
+												
+						e = e || window.event // cross-browser event
+						if (e.stopPropagation) {
+							// W3C standard variant
+							e.stopPropagation()
+						} else {
+							// IE variant
+							e.cancelBubble = true
+						}						
+					});
+					// initially apply lift to all buttons
+					items[i].style.boxShadow = '0 1px 5px rgba(0, 0, 0, 0.15)';
+					
+					items[i].addEventListener("mouseup", function(e){
+						this.style.boxShadow = '0 1px 5px rgba(0, 0, 0, 0.15)';
+					});
+					items[i].addEventListener("mousedown", function(e){
+						this.style.boxShadow = '0 1px 5px rgba(0, 0, 0, 0.05)';
+					});
+					items[i].addEventListener("mouseout", function(e){
+						this.style.boxShadow = '0 1px 5px rgba(0, 0, 0, 0.15)';
+					});
+					
+					//var randomColor = colors[Math.floor(Math.random() * colors.length)];
+					//items[i].classList.add(randomColor);
+				}
+			}
+			function attachListenersToLogo(){
+				logo.addEventListener("click", function(e){
+					window.location = "../";
+				});
+			}	
+			function attachListenerToBody(){
+				var inHeaderArea = false;
+				body.addEventListener("click", function(e){
+					e = e || window.event // cross-browser event
+					inHeaderArea = (e.target.className.indexOf("header-on-display") > -1);
+					
+					if (!inHeaderArea){
+						header.innerHTML = initialMessage;
+					}
+					if (e.stopPropagation) {
+						// W3C standard variant
+						e.stopPropagation()
+					} else {
+						// IE variant
+						e.cancelBubble = true
+					}						
+					clearAll();
+				});					
+			}
+			function clearAll(){
+				for (var i = 0; i < items.length; i++) {
+					items[i].classList.remove('selected');
+				}
+				//header.classList.remove('.header-on-display');
+			}
+		</script>
+	</body>
+</html>

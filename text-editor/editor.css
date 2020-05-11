@@ -1,0 +1,32 @@
+.text-editor{
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid rgb(53,54,54);
+}
+
+.toolbar
+{
+    width: 600px;
+    margin: auto;
+    padding: 6px;
+}
+
+.bold-btn
+{
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: black;
+}
+
+.toolbar-btn:hover
+{
+    border-radius: 5px;
+    background-color: lightgrey;
+
+}
