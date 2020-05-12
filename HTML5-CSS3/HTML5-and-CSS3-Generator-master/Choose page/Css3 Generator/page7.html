@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS3 Generator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alegreya" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"  href="assets/css/page7.css">
+</head>
+<body>
+
+  <!-- Navbar-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="navbutton">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+      <a class="navbar-brand" href="index.html"><img  id="logo" src="assets/images/bu.png"></a>
+      <a class="navbar-brand" href="index.html">CSS3 GENERATOR</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="page1.html"><b>Border-radius</b></a></li>
+      <li><a href="page2.html"><b>Box-Shadow</b></a></li>
+      <li><a href="page3.html"><b>Columns</b></a></li>
+      <li><a href="page4.html"><b>Text-shadow</b></a></li>
+      <li><a href="page5.html"><b>Opacity</b></a></li>
+      <li><a href="page6.html"><b>Colors</b></a></li>
+      <li><a href="page7.html"><b>Transform</b></a></li>
+    </ul>
+    </div>
+</nav>
+
+<!-- Function-->
+<section>
+<div class="container-fluid">
+  <div class="text-center">
+  </div>
+  <div class="row">
+
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h4>Transform</h4>
+        </div>
+        <div class="panel-body">
+          <p><strong>
+
+
+		 <script type="text/javascript">
+function Transform(n1,n2,na,nb,s1){
+var nu1 = document.getElementById('numberr1').innerHTML= '.div_transform { transform : translate  (  '+ document.getElementById('numberr1').value + ' px ';
+var nu2 = document.getElementById('numberr2').innerHTML= ''+ document.getElementById('numberr2').value + 'px )' ;
+var de = document.getElementById('degrees').innerHTML= 'rotate ( '+ document.getElementById('degrees').value + ' deg )' ;
+var nua = document.getElementById('numbera').innerHTML= ' skew ( '+ document.getElementById('numbera').value + ' deg, ';
+var nub = document.getElementById('numberb').innerHTML= ''+ document.getElementById('numberb').value + ' deg )' ;
+var si1 = document.getElementById('size1').innerHTML= 'size ( '+ document.getElementById('size1').value + ' )' ;
+alert(nu1 + "   " + nu2 + " " + de +" "+ nua + " "+ nub +" " + si1);
+}
+</script>
+<label>X:</label> <input type=" number" name="number1  "value="0" id="numberr1"/><br /> <br />
+<label>Y:</label> <input type="number" name="numberr2" value="0" id="numberr2"/><br /><br />
+<label>Degrees:</label> <input type="number" name="degrees" value="0" id="degrees"/><br /><br />
+<label>A(deg):</label> <input type=" number" name="A" value="0" id="numbera"/><br /> <br />
+<label>B(deg):</label> <input type="number" name="B" value="0" id="numberb"/><br /><br />
+<label>Size:</label> <input type="number" name="size" value="0" id="size1"/><br /><br />
+<button onClick="Transform('numberr1','numberr2','degrees', 'numbera','numberb','size1')" class = "btn"/>Submit</button>
+<br>
+<br>
+
+		  </strong>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h4>What Transform do?</h4>
+        </div>
+        <div class="panel-body">
+          <strong>
+		  <p class="transformdo"><u>Generate CSS3 Transform - Translate(X and Y):</u>
+		  The transform translate property allows you to move an element and it's children's positions.
+This varies from using the left and top properties as you can have an element relative, when you translate
+ the element it will visually move the element however, the original relative position of the element will
+ remain the same. Left and top require you to set an element as absolute and changing the properties physically moves the element around the screen.</p>
+		  </strong>
+          <p class="transformdo"><strong><u>Generate CSS3 Transform - Rotate(Degrees):</u>
+The transform rotate property allows you to rotate an element.
+You can set the origin of where the element will rotate from (the axis point) using the transform origin property.
+</strong>
+          <p class="transformdo"><strong> <u>Generate CSS3 Transform - Skew(A(deg) and B (deg)):</u>
+The transform skew property allows you to skew an element and it's children.
+1 is the normal size (1:1 scale), 0.5 = 50% of the size, 2 = twice the size.
+</strong>
+          <p class="transformdo"><strong> <u>Generate CSS3 Transform - Scale(Size):</u>
+The transform rotate property allows you to scale an element and it's children.
+1 is the normal size (1:1 scale), 0.5 = 50% of the size, 2 = twice the size.</strong>
+
+        </div>
+
+      </div>
+    </div>
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h4>Transform Style</h4>
+        </div>
+        <div class="panel-body">
+          <strong>
+		   <button type="button" class="btn"  data-toggle="collapse" data-target="#flatstyle">Flat</button>
+  <div id="flatstyle" class="collapse">
+ transform-style: flat;
+  </div>
+
+		  </strong>
+		  <br>
+		  <br>
+          <strong><button type="button" class="btn"  data-toggle="collapse" data-target="#preserve3d"> Preserve 3D</button>
+  <div id="preserve3d" class="collapse">
+transform-style: preserve-3d;
+		  </strong>
+
+
+         </div>
+		 <br>
+		  <br>
+		   <br>
+        <div class="panel-footer">
+
+
+		<p> <b>The transform style property allows you set the style of transform for a particular element (2D or 3D).
+To use 3D you must set the perspective of the parent which will contain the 3D environment, or add transform perspective to this element. </b></p>
+</div>
+      </div>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+    <p id="footer">Made by Lu.R.G </p>
+</footer>
+
+<script>
+$(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+
+</body>
+</html>

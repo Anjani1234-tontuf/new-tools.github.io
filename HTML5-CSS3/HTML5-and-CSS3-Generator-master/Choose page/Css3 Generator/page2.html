@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS3 Generator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alegreya" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"  href="assets/css/page2.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="navbutton">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+
+            </button>
+        <a class="navbar-brand" href="index.html"><img  id="logo" src="assets/images/bu.png"></a>
+        <a class="navbar-brand" href="index.html">CSS3 GENERATOR</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="page1.html"><b>Border-radius</b></a></li>
+        <li><a href="page2.html"><b>Box-Shadow</b></a></li>
+        <li><a href="page3.html"><b>Columns</b></a></li>
+        <li><a href="page4.html"><b>Text-shadow</b></a></li>
+        <li><a href="page5.html"><b>Opacity</b></a></li>
+        <li><a href="page6.html"><b>Colors</b></a></li>
+        <li><a href="page7.html"><b>Transform</b></a></li>
+      </ul>
+      </div>
+  </nav>
+
+  <!-- Start here -->
+   <div class="container-fluid">
+    <div class="text-center">
+      <h3>Box Shadow (Inner and Outer)</h3>
+  <h3>and Box Sizing</h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+
+  		<!-- Box Shadow Outer-->
+
+            <h4>Box Shadow Outer</h4>
+          </div>
+          <div class="panel-body">
+            <strong>
+  		 <script type="text/javascript">
+  function boxShadowO(n1,n2,n3,c1){
+  var nu1 = document.getElementById('number1').innerHTML= '.div_shadow { box shadow :    '+ document.getElementById('number1').value + ' px ';
+  var nu2 = document.getElementById('number2').innerHTML= ''+ document.getElementById('number2').value + 'px ' ;
+  var nu3 = document.getElementById('number3').innerHTML= ' '+ document.getElementById('number3').value + ' px ' ;
+  var co1 = document.getElementById('colorrr1').innerHTML= ' # '+ document.getElementById('colorrr1').value ;
+  alert(nu1 + "   " + nu2 + " " + nu3 +" "+ co1);
+  }
+  </script>
+  <label>X:</label> <input type="number" name="number1  "value="0" id="number1"/><br /> <br />
+  <label>Y:</label> <input type="number" name="number2" value="0" id="number2"/><br /><br />
+  <label>Z:</label> <input type="number" name="number3" value="0" id="number3"/><br /><br />
+  <label>Color #:</label> <input type="number" name="colorrr1" value="0" id="colorrr1"/><br /> <br />
+  <button onClick="boxShadowO('number1','number2','number3', 'colorrr1')" class = "btn"/>Submit</button>
+  <br>
+  <br>
+
+
+  		</strong>
+  <strong>
+  <script type="text/javascript">
+  function processsData(c1){
+  var cv1 = document.getElementById(c1).value;
+
+  alert( cv1 );
+  }
+  </script>
+
+   <label>Chose Color 1:</label>
+   <input type="color" name="color1" id="color1"/>
+   <button onClick="processsData('color1')" class="btn"> Color Code</button>
+  		</strong>
+  <br>
+
+          </div>
+          <div class="panel-footer">
+  		<p>The box shadow property allows you to put a shadow onto an element.
+  This outer box shadow will allow you to put the shadow on the outside of an element (drop shadow).</p>
+         </div>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+
+  		<!-- Box Shadow Inner-->
+            <h4>Box Shadow Inner</h4>
+          </div>
+          <div class="panel-body">
+
+            <strong>
+
+  		  <script type="text/javascript">
+  function boxShadowI(nu1,nu2,nu3,co1){
+  var num1 = document.getElementById('numberrr1').innerHTML= '.div_shadow  <br>  { box shadow : inset    '+ document.getElementById('number1').value + ' px ';
+  var num2 = document.getElementById('numberrr2').innerHTML= ''+ document.getElementById('numberrr2').value + 'px ' ;
+  var num3 = document.getElementById('numberrr3').innerHTML= ' '+ document.getElementById('numberrr3').value + ' px ' ;
+  var col1 = document.getElementById('colorr1').innerHTML= ' # '+ document.getElementById('colorr1').value+'}' ;
+  alert(num1 + "   " + num2 + " " + num3 +" "+ col1);
+  }
+  </script>
+  <label>A:</label> <input type="number" name="numberrr1  "value="0" id="numberrr1"/><br /> <br />
+  <label>B:</label> <input type="number" name="numberrr2" value="0" id="numberrr2"/><br /><br />
+  <label>C:</label> <input type="number" name="numberrr3" value="0" id="numberrr3"/><br /><br />
+  <label>Color #:</label> <input type="number" name="colorr1" value="0" id="colorr1"/><br /> <br />
+  <button onClick="boxShadowI('numberrr1','numberrr2','numberrr3', 'colorr1')" class = "btn"/>Submit</button>
+  <br>
+
+  </strong>
+  		  <br>
+  		  <strong>
+  		    <script type="text/javascript">
+  function processiData(c2){
+  var cv2 = document.getElementById(c2).value;
+
+  alert( cv2   );
+  }
+  </script>
+
+   <label>Chose Color 2:</label> <input type="color" name="color2" id="color2"/>
+   <button onClick="processiData('color2')" class="btn" >Color Code 2</button>
+   </strong>
+
+          </div>
+          <div class="panel-footer">
+          <p>The box shadow property allows you to put a shadow onto an element.
+  This inset box shadow will allow you to put the shadow on the inside of an element (inner shadow).</p>
+
+          </div>
+
+        </div>
+      </div>
+     <div class="col-sm-4">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+
+  		<!--Box Sizing -->
+            <h4>Box Sizing</h4>
+          </div>
+          <div class="panel-body">
+            <p><strong>
+
+
+  		  </strong> </p>
+            <p><strong>
+  		  <button  class="btn"  data-toggle="collapse" data-target="#contentbox">Content Box</button>
+    <div id="contentbox" class="collapse">
+    box-sizing: content-box;
+    </div>
+    </strong></p>
+            <p><strong>
+  		  <button class="btn" data-toggle="collapse" data-target="#borderbox">Border Box</button>
+    <div id="borderbox" class="collapse">
+    box-sizing: border-box;
+    </div>
+  		  </strong> </p>
+            <p><strong>
+  		 <button class="btn" style="width:100px;" data-toggle="collapse" data-target="#inherit">Inherit</button>
+    <div id="inherit" class="collapse">
+   box-sizing: inherit;
+    </div>
+  		  </strong> </p>
+
+          </div>
+          <div class="panel-footer">
+            <p>The box-sizing property allows you to define whether to include padding and borders within the
+  		  specified width.For example, if you would like a box to be exactly 200px wide, you
+  		  can specify box-sizing as "border-box",set the width as 200px, and any padding or
+  		  border will stay within the 200px. Content-box is the standard rendering (padding and border is
+  		  in addition to the width).</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="text-center">
+    <a class="up-arrow" href="" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+      <p id="footer">Made by Lu.R.G </p>
+  </footer>
+
+  <script>
+  $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+  })
+  </script>
+
+  </body>
+  </html>

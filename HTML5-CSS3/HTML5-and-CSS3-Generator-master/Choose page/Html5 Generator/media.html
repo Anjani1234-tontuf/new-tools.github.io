@@ -1,0 +1,182 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Html5 Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alegreya" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"  href="assets/css/media.css">
+  <script src="assets/js/media.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse  ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index2.html"><img  id="logo" src="assets/images/logo.png"></a>
+        <a class="navbar-brand" href="index2.html">HTML5 GENERATOR</a>
+      </div>
+
+      </div>
+  </nav>
+
+  <!-- second nav -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+     <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+         <a class="navbar-brand" href="index2.html"><img  id="logo" src="assets/images/logo.png"></a>
+         <a class="navbar-brand" href="index2.html">HTML5 TOOLS:</a>
+       </div>
+ <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav navbar-left">
+         <li> <a href="index2.html"><b>HOME</b></a></li>
+           <li><a href="input.html"><b>INPUT</b></a></li>
+           <li><a href="text.html"><b>TEXT</b></a></li>
+           <li><a href="media.html"><b>MEDIA</b></a></li>
+           <li><a href="meta.html"><b>META TAGS</b></a></li>
+       </ul>
+     </div>
+       </div>
+     </nav>
+
+  <!-- Buttons -->
+
+    <img src="assets/images/hey.png" alt="worldlog" id="worldlogo">
+ 	<div class="buttons">
+  	  <p class="choose">Choose category:</p>
+    	  <a href="#page1"><button class="btn">Video and Audio</button></a>
+    	  <a href="#page2"><button class="btn">Images</button></a>
+	 </div>
+
+  <!-- Page 1 -->
+<section id="page1">
+  <div class="container-fluid">
+    <div class="text-center">
+    	 <h2>Video and Audio:</h2>
+    </div>
+    <div class="row">
+       <div class="col-sm-1">
+       </div>
+     <div class="col-sm-5">
+       <div class="panel panel-default text-center">
+         <div class="panel-heading">
+           <h1>Video Generator:</h1>
+         </div>
+         <div class="panel-body">
+             <label> Width: </label>
+             <input type = 'number' id='width'   name='width' onchange = 'Widthvideo();' />
+               <div id = 'generatedwidth'></div>
+                 <button type="button" class="btn" onclick="Widthvideo()">Result  </button>
+                 <br>
+                 <br>
+                 <label>Height: </label>
+                 <input type = 'number' id='height'   name='height' onchange = 'Heighthvideo();' />
+                  <div id = 'generatedheight'></div>
+                 <button type="button" class="btn" onclick="Heightvideo()">Result  </button>
+                 <br><br>
+                 <label>MP4 video: </label>
+                 <input type = 'text' id='mp4' name='mp4' onchange = 'Mp4video();' />
+                  <div id = 'generatedmp4'></div>
+                 <button type="button" class="btn" onclick="Mp4video()">Result  </button>
+                 <br><br>
+                 <label>OGV video: </label>
+                 <input type = 'text' id='ogv'   name='ogv' onchange = 'Ogvvideo();' />
+                 <div id = 'generatedogv'></div>
+                 <button type="button" class="btn" onclick="Ogvvideo()">Result  </button><br>
+                 <label>WebM video: </label>
+                 <input type = 'text' id='webm' name='webm' onchange = 'WebMvideo();' />
+                 <div id = 'generatedwebm'></div><br>
+                 <button type="button" class="btn" onclick="WebMvideo()">Result  </button>
+                 <button onClick="Video('mp4','ogv','webm')" class="btn" >Submit</button>
+                 </div>
+         </div>
+       </div>
+
+
+     <!--Second box -->
+     <div class="col-sm-5">
+       <div class="panel panel-default text-center">
+         <div class="panel-heading">
+           <h1>Audio Generator:</h1>
+         </div>
+         <div class="panel-body">
+           <label>MP3 audio: </label>
+           <input type = 'text' id='mp3'   onchange = 'Mp3audio();' />
+           <div id = 'generatedmp3audio'></div>
+           <br>
+           <button type="button" class="btn" onclick="Mp3audio()">Result  </button>
+           <br>
+           <br>
+           <!-- OGG -->
+           <label>OGG audio: </label>
+           <input type = 'text' id='ogg'   onchange = 'Oggaudio();' />
+           <div id = 'generatedogg'></div>
+           <br>
+           <button type="button" class="btn" onclick="Oggaudio()">Result  </button>
+           <br><br>
+           <!-- WAV -->
+           <label>WAV audio: </label>
+           <input type = 'text' id='wav'   onchange = 'WAV();' />
+           <div id = 'generatedwav'></div>
+           <br>
+           <button type="button" class="btn" onclick="WAV()">Result  </button>
+           <button onClick="Audio('mp3','ogg','wav')" class="btn" >Submit</button>
+
+     </div>
+   </div>
+   </section>
+
+<section id="page2">
+
+  <div class="container-fluid">
+
+  <div class="row">
+     <div class="col-sm-3">
+     </div>
+   <div class="col-sm-6">
+     <div class="panel panel-default text-center">
+       <div class="panel-heading">
+         <h1>Images Generator:</h1>
+       </div>
+             <div class="panel-body">
+  <label>URL: </label>
+  <input type = 'text' id='url'   onchange = 'URLimage();' />
+  <div id = 'generatedurlimage'></div>
+  <br>
+  <button type="button" class="btn" onclick="URLimage()">Result  </button>
+  <br>
+  <br>
+  <label>ALT: </label>
+  <input type = 'text' id='alt'   onchange = 'Altimage();' />
+  <div id = 'generatedalt'></div>
+  <br>
+  <button type="button" class="btn" onclick="Altimage()">Result  </button>
+  <br>
+  <br>
+  <label> Width: </label>
+  <input type = 'number' id='widthi'   name='widthi' onchange = 'Widthi();' />
+  <div id = 'generatedwidthi'></div>
+  <button type="button" class="btn" onclick="Widthi()">Result  </button>
+  <br>
+  <br>
+  <label>Height: </label>
+  <input type = 'number' id='heighti'   name='height' onchange = 'Heighthi();' />
+  <div id = 'generatedheighti'></div>
+  <button type="button" class="btn" onclick="Heighti()">Result  </button>
+
+  <button onClick="Image('url','alt','widthi','heighti')" class="btn" >Submit</button>
+</div>
+</div>
+</section>
+</body>
+</html>

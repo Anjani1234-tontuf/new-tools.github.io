@@ -1,0 +1,123 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Html5 Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alegreya" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet"  href="assets/css/input.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                 <a class="navbar-brand" href="index2.html"><img  id="logo" src="assets/images/logo.png"></a>
+       		 <a class="navbar-brand" href="index2.html">HTML5 GENERATOR</a>
+      </div>
+   </div>
+  </nav>
+
+  <!-- second nav -->
+ <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="index2.html"><img  id="logo" src="assets/images/logo.png"></a>
+        <a class="navbar-brand" href="index2.html">HTML5 TOOLS:</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+     	 <ul class="nav navbar-nav navbar-left">
+        	<li> <a href="index2.html"><b>HOME</b></a></li>
+        	<li><a href="input.html"><b>INPUT</b></a></li>
+        	<li><a href="text.html"><b>TEXT</b></a></li>
+        	<li><a href="media.html"><b>MEDIA</b></a></li>
+        	<li><a href="meta.html"><b>META TAGS</b></a></li>
+      	</ul>
+    </div>
+    </div>
+    </nav>
+
+<!-- Page 1 -->
+
+<section id="page1">
+  <div class="container-fluid">
+	 <div class="text-center">
+  		 <h2>Layouts and Blocks:</h2>
+	 </div>
+	 <div class="row">
+    	 	<div class="col-sm-1">
+   	 	 </div>
+   <div class="col-sm-5">
+     <div class="panel panel-default text-center">
+       <div class="panel-heading">
+         <h1>Layouts Generator:</h1>
+         <h5>Links allow users to click their way from page to page. HTML links are hyperlinks.
+         A hyperlink is a text you can click on, and jump to another document</h5>
+       </div>
+             <div class="panel-body">
+               <script>
+               function Links(){
+               var a = document.getElementById('generatedlinks').innerHTML = ' < a href = " '+ document.getElementById('links').value + '" > Link name < / a >';
+               }
+               function LocalLink(){
+               var b = document.getElementById('generatedllinks').innerHTML = ' < a href = "# '+ document.getElementById('llink').value + '" > Link name < / a >';
+               }
+               </script>
+               <label> Write your links: </label>
+               <input type = 'text' id='links'   name='links' onchange = 'Links();' />
+               <div id = 'generatedlinks'></div>
+               <button type="button" class="btn" onclick="Links()">Result  </button></br></br>
+               <label>Local links(with #id): </label>
+               <input type = 'text' id='llink'   name='llink' onchange = 'LocalLink();' />
+               <div id = 'generatedllinks'></div>
+               <button type="button" class="btn" onclick="LocalLink()">Result  </button></br>
+               </div>
+       </div>
+     </div>
+
+
+   <!--Second box -->
+   <div class="col-sm-5">
+     <div class="panel panel-default text-center">
+       <div class="panel-heading">
+         <h1>Blocks Generator:</h1>
+         <h5>Every HTML element has a default display value depending on what type of element it is.
+         The default display value for most elements is block or inline.</h5>
+       </div>
+       <div class="panel-body">
+         <script>
+         function Div(){
+ var div = document.getElementById('generateddiv').innerHTML = ' < div > '+ document.getElementById('div').value + ' < / div >';
+ }
+ function Span(){
+ var span = document.getElementById('generatedspan').innerHTML = ' < span> '+ document.getElementById('span').value + ' < / span >';
+ }
+
+         </script>
+
+ <p>The < div > element is a block-level element that is often used as a container for other HTML elements.</p>
+ <label>Div: </label>
+ <input type = 'text' id='div'   onchange = 'Div()' />
+ <div id = 'generateddiv'></div>
+ <button type="button" class="btn" onclick="Div()">Result  </button>
+ <p>The < span > is an inline element</p>
+ <label>Span: </label>
+ <input type = 'text' id='span'   onchange = 'Span()' />
+ <div id = 'generatedspan'></div>
+ <button type="button" class="btn" onclick="Span()">Result  </button>
+   </div>
+ </div>
+ </section>
+
+</body>
+</html>

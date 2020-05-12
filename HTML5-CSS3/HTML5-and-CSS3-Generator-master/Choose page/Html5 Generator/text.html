@@ -1,0 +1,222 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Html5 Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alegreya" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"  href="assets/css/text.css">
+  <script src="assets/js/text.js"></script>
+ </head>
+<body>
+  <nav class="navbar navbar-inverse  ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index2.html"><img  id="logo" src="assets/images/logo.png"></a>
+        <a class="navbar-brand" href="index2.html">HTML5 GENERATOR</a>
+      </div>
+      </div>
+  </nav>
+
+  <!-- second nav -->
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+     <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+         <a class="navbar-brand" href="index2.html"><img  id="logo" src="assets/images/logo.png"></a>
+         <a class="navbar-brand" href="index2.html">HTML5 TOOLS:</a>
+       </div>
+ <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav navbar-left">
+         <li> <a href="index2.html"><b>HOME</b></a></li>
+           <li><a href="input.html"><b>INPUT</b></a></li>
+           <li><a href="text.html"><b>TEXT</b></a></li>
+           <li><a href="media.html"><b>MEDIA</b></a></li>
+           <li><a href="meta.html"><b>META TAGS</b></a></li>
+       </ul>
+     </div>
+       </div>
+     </nav>
+  <!-- Buttons -->
+    <img src="assets/images/hey.png" alt="computer" id="worldlogo">
+  <div class="buttons">
+    <p class="choose">Choose category:</p>
+    <a href="#page1"><button class="btn">Headings and Paragraphs</button></a>
+    <a href="#page2"><button class="btn">Styles</button></a>
+    <a href="#page3"><button class="btn">Formatting</button></a>
+  </div>
+
+<!-- page 1 -->
+<section id="page1">
+  <div class="container-fluid">
+ <div class="text-center">
+   <h2>Headings and Paragraphs:</h2>
+ </div>
+ <div class="row">
+     <div class="col-sm-1">
+     </div>
+   <div class="col-sm-5">
+     <div class="panel panel-default text-center">
+       <div class="panel-heading">
+         <h1>Headings:</h1>
+         <h5>Headings are defined with the < h1 > to < h6 > tags.
+          defines the most important heading. < h6 > defines the least important heading.</h5>
+       </div>
+             <div class="panel-body">
+               <label><h4> Write your text and choose the size:</h4> </label>
+               <input  type='text' name='h' size="40" id="h">
+               <div id = 'generatedh1'></div>
+               <div id = 'generatedh2'></div>
+               <div id = 'generatedh3'></div>
+               <div id = 'generatedh4'></div>
+               <div id = 'generatedh5'></div>
+               <div id = 'generatedh6'></div>
+               <br>
+               <button type="button" class="btn" onclick="H1head()">H1 </button>
+               <button type="button" class="btn" onclick="H2head()">H2 </button>
+               <button type="button" class="btn" onclick="H3head()">H3 </button>
+               <button type="button" class="btn" onclick="H4head()">H4 </button>
+               <button type="button" class="btn" onclick="H5head()">H5 </button>
+               <button type="button" class="btn" onclick="H6head()">H6 </button>
+               <br>
+               </div>
+       </div>
+     </div>
+
+
+   <!--Second box -->
+   <div class="col-sm-5">
+     <div class="panel panel-default text-center">
+       <div class="panel-heading">
+         <h1>Paragraphs:</h1>
+         <h5>HTML paragraphs are defined with the < p > tag:</p></h5>
+       </div>
+       <div class="panel-body">
+         <label><h4> Write your text:</h4> </label>
+         <input type="text" name="paragraph" size="40" id="p">
+         <div id = 'generatedp'></div>
+         <br>
+         <button type="button" class="btn" onclick="paragraph()">Result</button>
+   </div>
+ </div>
+ </section>
+
+ <!--Page 2 -->
+ <section id="page2">
+   <div class="container-fluid">
+  <div class="text-center">
+    <h2>Styles:</h2>
+  </div>
+  <div class="row">
+      <div class="col-sm-2">
+      </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Color/ Fonts / Size:</h1>
+        </div>
+              <div class="panel-body">
+          <label><h4> HTML Background Color:</h4></label><br>
+          <input type="text" name="bc" size="25" id="back">
+          <div id = 'generatedback'></div>
+          <button type="button" class="btn" onclick="Background()">Result</button>
+          </div>
+          <div class="Color text-center">
+          <label><h4> HTML Text Color:</h4></label><br>
+          <input type="text" name="color" size="25" id="tc">
+          <div id = 'generatedtc'></div>
+          <button type="button" class="btn" onclick="Tcolor()">Result</button>
+          </div>
+          <div class="Font text-center">
+          <label><h4> HTML  Fonts:</h4></label><br>
+          <input type="text" name="fonts" size="25" id="fonts">
+          <div id = 'generatedfonts'></div>
+          <button type="button" class="btn" onclick="Fonts()">Result</button>
+          </div>
+          <div class="TSize text-center">
+          <label><h4> HTML  Text Size:</h4></label><br>
+          <input type="number" name="size"  id="size" value="0">
+          <div id = 'generatedsize'></div>
+          <button type="button" class="btn" onclick="Tsize()">Result</button>
+          </div>
+        </div>
+      </div>
+
+	  <!--Second box -->
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>HTML  Text Alignment:</h1>
+        </div>
+        <div class="panel-body">
+          <label><h4>  Text Alignment center:</h4></label><br>
+          <button  class="btn"  data-toggle="collapse" data-target="#center">Center</button>
+            <div id="center" class="collapse">
+            style="text-align:center;"
+          </div>
+          <div class="TA text-center">
+          <label><h4>  Text Alignment right:</h4></label><br>
+          <button  class="btn"  data-toggle="collapse" data-target="#right">Right</button>
+            <div id="right" class="collapse">
+            style="text-align:right;"
+          </div>
+          <div class="TA text-center">
+          <label><h4> Text Alignment left:</h4></label><br>
+          <button  class="btn"  data-toggle="collapse" data-target="#left">Left</button>
+            <div id="left" class="collapse">
+            style="text-align:left;"
+        </div>
+
+      </div>
+    </div>
+</div>
+ </section>
+
+<!--Page 3 -->
+ <section id="page3">
+   <div class="container-fluid">
+       <div class="row">
+         <div class="col-sm-2">
+         </div>
+    <div class="col-sm-8">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1> Formatting Elements:</h1>
+          <h5>HTML defines special elements for defining text with a special meaning.</h5>
+        </div>
+              <div class="panel-body">
+                <label><h4> Chose Formatting Element:</h4> </label>
+                <input type='text' name='f' size="40" id="f">
+                <div id = 'generatedb'></div>
+                <div id = 'generatedi'></div>
+                <div id = 'generatede'></div>
+                <div id = 'generatedm'></div>
+                <div id = 'generateds'></div>
+                <div id = 'generatedd'></div>
+                <div id = 'generatedsub'></div>
+                <div id = 'generatedsup'></div>
+                <br>
+                <button type="button" class="btn" onclick="Bold()">Bold text </button>
+                <button type="button" class="btn" onclick="Italic()">Italic text </button>
+                <button type="button" class="btn" onclick="Em()">Emphasized text</button>
+                <button type="button" class="btn" onclick="Mark()">Marked text </button>
+                <button type="button" class="btn" onclick="Small()">Small text</button>
+                <button type="button" class="btn" onclick="Delete()">Deleted text </button>
+                <button type="button" class="btn" onclick="Subscript()">Subscripts </button>
+                <button type="button" class="btn" onclick="Superscript()">Superscripts</button>
+
+                </div>
+        </div>
+      </div>
+ </section>
+</body>
+</html>

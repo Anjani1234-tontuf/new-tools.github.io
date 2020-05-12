@@ -1,0 +1,124 @@
+body {
+  font-family: 'Alegreya', serif;
+  /*background-color: #ffffcc;*/
+  /*background-color: #ffa366;*/
+}
+
+ #logo {
+   width: 50px;
+   height:50px;
+   margin-top: -13px;
+   margin-right: -15px;
+ }
+
+ #navbutton{
+   width:45px;
+ }
+
+ #navbutton:hover {
+   background-color: black;
+ }
+ 
+ .navbar {
+     margin-bottom: 0;
+     background-color:#409ad6;
+     z-index: 9999;
+     border: 0;
+     font-size: 14px !important;
+     letter-spacing: 1.5px;
+     border:2px solid #409ad6;
+}
+
+ .navbar li a, .navbar .navbar-brand {
+     color: #fff !important;
+ }
+
+ .navbar-nav li a:hover, .navbar-nav li.active a {
+     color: #409ad6 !important;
+     background-color: #fff !important;
+ }
+
+  .navbar-default .navbar-toggle {
+     border-color: transparent;
+     color: #fff !important;
+ }
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+#smartbeast {
+  float:left;
+  margin-top: 62px;
+  margin-left: 160px;
+  margin-right: 0px;
+
+}
+
+h3{
+  color: #ffffff;
+}
+
+.panel {
+    border: 3px solid #409ad6;
+    transition: box-shadow 0.5s;
+    border-radius: 10px;
+    float:left;
+    width:400px;
+    margin-top: 62px;
+    margin-left: 0px;
+
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #409ad6!important;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.panel-footer {
+    color: #fff !important;
+    background-color: #409ad6!important;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button{
+  color: #ffffff;
+  background-color: #f16528;
+  width:200px;
+  font-weight: bolder!important;
+  font-size: 15px !important;
+}
+
+button:hover {
+  background-color:white;
+  color:#f16528 !important;
+  border:3px solid #f16528;
+
+}
+
+section {
+  height:750px;
+}
+
+footer {
+  background-color:#409ad6;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+p {
+  color:white;
+  font-weight: bold;
+}

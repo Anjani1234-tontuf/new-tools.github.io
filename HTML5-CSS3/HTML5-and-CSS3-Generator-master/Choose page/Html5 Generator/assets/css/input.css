@@ -1,0 +1,70 @@
+body {
+  font-family: 'Alegreya', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#logo {
+  width: 50px;
+  height:50px;
+  margin-top: -13px;
+  margin-right: -15px;
+}
+
+.btn {
+  background-color: #366897;
+  color:white;
+  border-radius: 10
+  margin-left:20px;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.btn:hover{
+  color: #366897;
+  background-color:white;
+  border: 2px solid #366897;
+}
+
+.btn:active{
+  background-color: #366897;
+  color:white;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 2px solid  #f4511e;
+    font-size: 14px !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.panel-heading{
+  background-color:#ffdbbd !important;
+}
+
+#page1 {
+  margin-top: 30px;
+  margin-bottom: 450px;
+  text-align: center;
+}
